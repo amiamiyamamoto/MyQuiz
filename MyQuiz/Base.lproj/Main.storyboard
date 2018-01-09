@@ -142,6 +142,61 @@
             </objects>
             <point key="canvasLocation" x="660" y="133.5832083958021"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="rkX-4T-qqd">
+            <objects>
+                <viewController id="9T8-Rz-fKH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="srj-U0-l9x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgM-x3-3gk">
+                                <rect key="frame" x="97" y="440" width="181" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="タイトルへ戻る">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jeP-6a-bh1">
+                                <rect key="frame" x="107" y="154" width="161" height="204"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正解率は" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxx-Ks-ez9">
+                                        <rect key="frame" x="0.0" y="0.0" width="161" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100％" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyL-Z7-oxu">
+                                        <rect key="frame" x="0.0" y="78" width="161" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="でした" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8w-xl-UkB">
+                                        <rect key="frame" x="0.0" y="156" width="161" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="jeP-6a-bh1" firstAttribute="centerX" secondItem="srj-U0-l9x" secondAttribute="centerX" id="3JN-1T-ilQ"/>
+                            <constraint firstItem="RgM-x3-3gk" firstAttribute="leading" secondItem="VX7-Mm-qdx" secondAttribute="leading" constant="97" id="4Uu-de-nya"/>
+                            <constraint firstItem="jeP-6a-bh1" firstAttribute="centerX" secondItem="RgM-x3-3gk" secondAttribute="centerX" id="DEC-TR-OLj"/>
+                            <constraint firstItem="VX7-Mm-qdx" firstAttribute="bottom" secondItem="RgM-x3-3gk" secondAttribute="bottom" constant="165" id="t0C-np-37X"/>
+                            <constraint firstItem="jeP-6a-bh1" firstAttribute="top" secondItem="VX7-Mm-qdx" secondAttribute="top" constant="155" id="xw7-4l-0gB"/>
+                            <constraint firstItem="RgM-x3-3gk" firstAttribute="top" secondItem="jeP-6a-bh1" secondAttribute="bottom" constant="59" id="zoD-kA-ivN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VX7-Mm-qdx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HDw-7C-tdv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1391.2" y="133.5832083958021"/>
+        </scene>
     </scenes>
     <resources>
         <image name="correct" width="202" height="202"/>
