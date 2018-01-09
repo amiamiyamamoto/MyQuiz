@@ -22,6 +22,7 @@
 		E761D8E71FFF9365007FF01D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E761D8EA1FFF9365007FF01D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E761D8EC1FFF9365007FF01D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E761D8F220047482007FF01D /* question.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = question.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +60,7 @@
 				E761D8E41FFF9365007FF01D /* Main.storyboard */,
 				E761D8E71FFF9365007FF01D /* Assets.xcassets */,
 				E761D8E91FFF9365007FF01D /* LaunchScreen.storyboard */,
+				E761D8F220047482007FF01D /* question.csv */,
 				E761D8EC1FFF9365007FF01D /* Info.plist */,
 			);
 			path = MyQuiz;

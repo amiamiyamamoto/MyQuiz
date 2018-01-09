@@ -27,6 +27,9 @@
                                 <state key="normal" title="START">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="QS0-rf-dir" kind="presentation" id="BH4-w4-gRX"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyQuiz" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WvY-C7-XU5">
                                 <rect key="frame" x="117" y="124" width="140" height="63"/>
@@ -55,7 +58,7 @@
         <!--View Controller-->
         <scene sceneID="OsZ-JJ-CSC">
             <objects>
-                <viewController id="QS0-rf-dir" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="question" id="QS0-rf-dir" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ypH-te-cue">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,7 +148,7 @@
         <!--View Controller-->
         <scene sceneID="rkX-4T-qqd">
             <objects>
-                <viewController id="9T8-Rz-fKH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="result" id="9T8-Rz-fKH" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="srj-U0-l9x">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
