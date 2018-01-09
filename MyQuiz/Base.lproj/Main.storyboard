@@ -112,10 +112,18 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="N4G-XY-mpV">
+                                <rect key="frame" x="86" y="232.5" width="202" height="202"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incorrect" translatesAutoresizingMaskIntoConstraints="NO" id="R42-bq-2R6">
+                                <rect key="frame" x="87" y="233" width="201" height="201"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
+                            <constraint firstItem="R42-bq-2R6" firstAttribute="centerY" secondItem="ypH-te-cue" secondAttribute="centerY" id="09a-Ay-ATP"/>
                             <constraint firstItem="D2G-1M-s6t" firstAttribute="leading" secondItem="7b0-Bz-Uto" secondAttribute="leading" constant="64" id="1Vq-fB-M8a"/>
+                            <constraint firstItem="R42-bq-2R6" firstAttribute="centerX" secondItem="ypH-te-cue" secondAttribute="centerX" id="33D-N6-cyZ"/>
                             <constraint firstItem="il1-hB-I2a" firstAttribute="top" secondItem="dmi-EL-1mN" secondAttribute="bottom" constant="6" id="8da-Pz-mDJ"/>
                             <constraint firstItem="il1-hB-I2a" firstAttribute="leading" secondItem="7b0-Bz-Uto" secondAttribute="leading" constant="28" id="KNC-Sg-0fd"/>
                             <constraint firstItem="D2G-1M-s6t" firstAttribute="top" secondItem="7b0-Bz-Uto" secondAttribute="top" constant="43" id="Lv1-dI-ato"/>
@@ -123,7 +131,9 @@
                             <constraint firstItem="7b0-Bz-Uto" firstAttribute="bottom" secondItem="il1-hB-I2a" secondAttribute="bottom" constant="47" id="TDG-1f-u0t"/>
                             <constraint firstItem="dmi-EL-1mN" firstAttribute="leading" secondItem="7b0-Bz-Uto" secondAttribute="leading" constant="23" id="XaS-mx-XFV"/>
                             <constraint firstItem="dmi-EL-1mN" firstAttribute="top" secondItem="D2G-1M-s6t" secondAttribute="bottom" constant="17" id="fs8-2I-Lcv"/>
+                            <constraint firstItem="N4G-XY-mpV" firstAttribute="centerX" secondItem="ypH-te-cue" secondAttribute="centerX" id="hb8-vQ-rht"/>
                             <constraint firstItem="dmi-EL-1mN" firstAttribute="centerX" secondItem="ypH-te-cue" secondAttribute="centerX" id="suq-m6-xd9"/>
+                            <constraint firstItem="N4G-XY-mpV" firstAttribute="centerY" secondItem="ypH-te-cue" secondAttribute="centerY" id="x22-pp-r0U"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7b0-Bz-Uto"/>
                     </view>
@@ -133,4 +143,8 @@
             <point key="canvasLocation" x="660" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="correct" width="202" height="202"/>
+        <image name="incorrect" width="201" height="201"/>
+    </resources>
 </document>
