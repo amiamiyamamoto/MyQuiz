@@ -103,6 +103,16 @@ class QuestionDataManager {
             return
         }
         
+        //次の問題を取りだす
+        func nextQuestion() -> QuestionData? {
+            if nowQuestionIndex < questionDataArray.count {
+                let nextQuestion = questionDataArray[nowQuestionIndex]
+                nowQuestionIndex += 1
+                return nextQuestion
+            }
+            return nil
+        }
+        
     }
 }
 
