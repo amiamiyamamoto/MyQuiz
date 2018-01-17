@@ -25,5 +25,23 @@ class StartViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //問題文の読み込み
         QuestionDataManager.sharedInstance.loadQuestion()
+        
+        //遷移先画面の呼び出し
+        guard let nextViewController = segue.destination as? QuestionViewController else {
+            return
+        }
+        
+        //問題文を取りだす
+        guard let questiondata = QuestionDataManager.sharedInstance.nextQuestion() else {
+            return
+        }
+        
+        //次の画面に問題文を渡す
+        nextViewController.questionData = questiondata
+    }
+    
+    //タイトルに戻ってくる時に呼び出される処理
+    @IBAction func goToTitle(_ segue:UIStoryboardSegue) {
+        
     }
 }

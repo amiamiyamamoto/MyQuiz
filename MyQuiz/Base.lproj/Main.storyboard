@@ -55,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="OsZ-JJ-CSC">
             <objects>
-                <viewController storyboardIdentifier="question" id="QS0-rf-dir" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="question" id="QS0-rf-dir" customClass="QuestionViewController" customModule="MyQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ypH-te-cue">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
