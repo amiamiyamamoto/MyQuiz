@@ -13,6 +13,7 @@
 		E761D8E81FFF9365007FF01D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E761D8E71FFF9365007FF01D /* Assets.xcassets */; };
 		E761D8EB1FFF9365007FF01D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E761D8E91FFF9365007FF01D /* LaunchScreen.storyboard */; };
 		E761D8F42005BD3B007FF01D /* QuestionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761D8F32005BD3B007FF01D /* QuestionDataManager.swift */; };
+		E7C769772011C62300D05051 /* question.csv in Resources */ = {isa = PBXBuildFile; fileRef = E7C769762011C60B00D05051 /* question.csv */; };
 		E7D5DCE6200DACA0009F3D50 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5DCE5200DACA0009F3D50 /* StartViewController.swift */; };
 		E7D5DCE8200EFB52009F3D50 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5DCE7200EFB52009F3D50 /* QuestionViewController.swift */; };
 /* End PBXBuildFile section */
@@ -25,8 +26,8 @@
 		E761D8E71FFF9365007FF01D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E761D8EA1FFF9365007FF01D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E761D8EC1FFF9365007FF01D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E761D8F220047482007FF01D /* question.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = question.csv; sourceTree = "<group>"; };
 		E761D8F32005BD3B007FF01D /* QuestionDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDataManager.swift; sourceTree = "<group>"; };
+		E7C769752011C60B00D05051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text; name = Base; path = Base.lproj/question.csv; sourceTree = "<group>"; };
 		E7D5DCE5200DACA0009F3D50 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		E7D5DCE7200EFB52009F3D50 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +62,7 @@
 		E761D8DF1FFF9365007FF01D /* MyQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				E7C769762011C60B00D05051 /* question.csv */,
 				E761D8E01FFF9365007FF01D /* AppDelegate.swift */,
 				E761D8E21FFF9365007FF01D /* ViewController.swift */,
 				E761D8E41FFF9365007FF01D /* Main.storyboard */,
@@ -68,7 +70,6 @@
 				E7D5DCE7200EFB52009F3D50 /* QuestionViewController.swift */,
 				E761D8E71FFF9365007FF01D /* Assets.xcassets */,
 				E761D8E91FFF9365007FF01D /* LaunchScreen.storyboard */,
-				E761D8F220047482007FF01D /* question.csv */,
 				E761D8F32005BD3B007FF01D /* QuestionDataManager.swift */,
 				E761D8EC1FFF9365007FF01D /* Info.plist */,
 			);
@@ -136,6 +137,7 @@
 			files = (
 				E761D8EB1FFF9365007FF01D /* LaunchScreen.storyboard in Resources */,
 				E761D8E81FFF9365007FF01D /* Assets.xcassets in Resources */,
+				E7C769772011C62300D05051 /* question.csv in Resources */,
 				E761D8E61FFF9365007FF01D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,6 +174,14 @@
 				E761D8EA1FFF9365007FF01D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E7C769762011C60B00D05051 /* question.csv */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7C769752011C60B00D05051 /* Base */,
+			);
+			name = question.csv;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -32,12 +32,15 @@ class StartViewController: UIViewController {
         }
         
         //問題文を取りだす
-        guard let questiondata = QuestionDataManager.sharedInstance.nextQuestion() else {
+        guard let questionData = QuestionDataManager.sharedInstance.nextQuestion() else {
             return
         }
         
+        print("aaaaaaaa")
+        print(questionData)
+        print("aaaaaaaa")
         //次の画面に問題文を渡す
-        nextViewController.questionData = questiondata
+        nextViewController.questionData = questionData
     }
     
     //タイトルに戻ってくる時に呼び出される処理
