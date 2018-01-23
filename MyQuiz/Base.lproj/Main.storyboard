@@ -63,8 +63,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2G-1M-s6t">
-                                <rect key="frame" x="64" y="63" width="20.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Q1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2G-1M-s6t">
+                                <rect key="frame" x="64" y="60" width="20.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -140,6 +140,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7b0-Bz-Uto"/>
                     </view>
+                    <connections>
+                        <outlet property="answer1Button" destination="RxU-vb-A8X" id="zQd-SV-JrF"/>
+                        <outlet property="answer2Button" destination="9QV-l0-Ffl" id="phr-vm-UDS"/>
+                        <outlet property="answer3Button" destination="hqD-2M-qiC" id="IJd-IL-WYB"/>
+                        <outlet property="answer4Button" destination="Fdn-hT-6TN" id="Htm-rR-hIx"/>
+                        <outlet property="correctImageView" destination="N4G-XY-mpV" id="0Ib-dD-RWt"/>
+                        <outlet property="incorrectImageView" destination="R42-bq-2R6" id="kcv-Ml-RAD"/>
+                        <outlet property="questionNoLabel" destination="D2G-1M-s6t" id="oqU-hu-NNt"/>
+                        <outlet property="questionTextView" destination="dmi-EL-1mN" id="1bu-nC-Ksx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kcl-f1-ZtM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
