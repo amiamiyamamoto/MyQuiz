@@ -16,6 +16,7 @@
 		E7C769772011C62300D05051 /* question.csv in Resources */ = {isa = PBXBuildFile; fileRef = E7C769762011C60B00D05051 /* question.csv */; };
 		E7D5DCE6200DACA0009F3D50 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5DCE5200DACA0009F3D50 /* StartViewController.swift */; };
 		E7D5DCE8200EFB52009F3D50 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5DCE7200EFB52009F3D50 /* QuestionViewController.swift */; };
+		E7D9E4C5201ADA8000551F20 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D9E4C4201ADA8000551F20 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E7C769752011C60B00D05051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text; name = Base; path = Base.lproj/question.csv; sourceTree = "<group>"; };
 		E7D5DCE5200DACA0009F3D50 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		E7D5DCE7200EFB52009F3D50 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		E7D9E4C4201ADA8000551F20 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7D9E4C5201ADA8000551F20 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +51,7 @@
 			children = (
 				E761D8DF1FFF9365007FF01D /* MyQuiz */,
 				E761D8DE1FFF9365007FF01D /* Products */,
+				E7D9E4C3201ADA7F00551F20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +78,14 @@
 				E761D8EC1FFF9365007FF01D /* Info.plist */,
 			);
 			path = MyQuiz;
+			sourceTree = "<group>";
+		};
+		E7D9E4C3201ADA7F00551F20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7D9E4C4201ADA8000551F20 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

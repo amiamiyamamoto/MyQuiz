@@ -88,6 +88,9 @@
                                         <state key="normal" title="ぼうし">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnsuwer1Button:" destination="QS0-rf-dir" eventType="touchUpInside" id="lNL-vk-WPd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9QV-l0-Ffl">
                                         <rect key="frame" x="0.0" y="97.5" width="318" height="88"/>
@@ -96,6 +99,9 @@
                                         <state key="normal" title="ふく">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer2Button:" destination="QS0-rf-dir" eventType="touchUpInside" id="SAg-lv-bwh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqD-2M-qiC">
                                         <rect key="frame" x="0.0" y="195.5" width="318" height="87.5"/>
@@ -104,6 +110,9 @@
                                         <state key="normal" title="パソコン">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer3Button:" destination="QS0-rf-dir" eventType="touchUpInside" id="ql9-kA-4eI"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fdn-hT-6TN">
                                         <rect key="frame" x="0.0" y="293" width="318" height="87.5"/>
@@ -112,6 +121,9 @@
                                         <state key="normal" title="スマホ">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer4Button:" destination="QS0-rf-dir" eventType="touchUpInside" id="SYx-9P-rpd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
