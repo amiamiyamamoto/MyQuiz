@@ -57,10 +57,11 @@ class QuestionViewController: UIViewController {
         //正解しているか判定
         if questionData.isCorrect() {
             //正解のアニメーションを再生しながら次の問題へ遷移する
+            goNextQuestionWithCorrectAnimation()
             return
         }
         //不正解のアニメーションを再生しながら次の問題へ遷移する
-
+        goNextQuestionWithInCorrectAnimation()
     }
     
     //次の問題に正解のアニメーション付きで遷移する
@@ -73,9 +74,39 @@ class QuestionViewController: UIViewController {
             self.correctImageView.alpha = 1.0
         }) { (Bool) in
             //アニメーション完了後に次の問題へ進む
+            self.goNextQuestion()
+        }
+    }
+    
+    //次の問題に、不正解のアニメーション付きで遷移する
+    func goNextQuestionWithInCorrectAnimation() {
+        //1006
+        //不正解を伝える音を鳴らす
+        AudioServicesPlayAlertSound(1006)
+        
+        //アニメーション
+        UIView.animate(withDuration: 2.0, animations: {
+            self.incorrectImageView.alpha = 1.0
+        }) { (Bool) in
+            //アニメーション完了後
+            self.goNextQuestion()
+        }
+    }
+    
+    func goNextQuestion() {
+        //問題文の取り出し
+        guard let nextQuestion = QuestionDataManager.sharedInstance.nextQuestion() else {
+            //問題がなければ結果画面に遷移する
+            //StoryboardのIdentifierに設定した（result)を指定してViewControllerを生成する
+            if let resultViewController = storyboard?.instantiateViewController(withIdentifier: "result") as? ResultViewController {
+                //Storyboardのsegueを利用しない明示的な画面遷移処理
+                present(resultViewController, animated: true, completion: nil)
+            }
+            return
+        }
     }
         
-    func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

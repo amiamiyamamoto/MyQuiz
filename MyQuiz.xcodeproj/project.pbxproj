@@ -17,6 +17,7 @@
 		E7D5DCE6200DACA0009F3D50 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5DCE5200DACA0009F3D50 /* StartViewController.swift */; };
 		E7D5DCE8200EFB52009F3D50 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5DCE7200EFB52009F3D50 /* QuestionViewController.swift */; };
 		E7D9E4C5201ADA8000551F20 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D9E4C4201ADA8000551F20 /* AudioToolbox.framework */; };
+		E7E24756201ED1450022C901 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E24755201ED1450022C901 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E7D5DCE5200DACA0009F3D50 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		E7D5DCE7200EFB52009F3D50 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		E7D9E4C4201ADA8000551F20 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E7E24755201ED1450022C901 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				E761D8E01FFF9365007FF01D /* AppDelegate.swift */,
 				E761D8E21FFF9365007FF01D /* ViewController.swift */,
 				E761D8E41FFF9365007FF01D /* Main.storyboard */,
+				E7E24755201ED1450022C901 /* ResultViewController.swift */,
 				E7D5DCE5200DACA0009F3D50 /* StartViewController.swift */,
 				E7D5DCE7200EFB52009F3D50 /* QuestionViewController.swift */,
 				E761D8E71FFF9365007FF01D /* Assets.xcassets */,
@@ -166,6 +169,7 @@
 				E7D5DCE6200DACA0009F3D50 /* StartViewController.swift in Sources */,
 				E761D8E11FFF9365007FF01D /* AppDelegate.swift in Sources */,
 				E761D8F42005BD3B007FF01D /* QuestionDataManager.swift in Sources */,
+				E7E24756201ED1450022C901 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
