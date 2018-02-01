@@ -217,6 +217,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VX7-Mm-qdx"/>
                     </view>
+                    <connections>
+                        <outlet property="correctPercentLabel" destination="PyL-Z7-oxu" id="xe7-2a-T5v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HDw-7C-tdv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

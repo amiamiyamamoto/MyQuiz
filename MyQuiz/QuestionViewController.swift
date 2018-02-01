@@ -104,6 +104,13 @@ class QuestionViewController: UIViewController {
             }
             return
         }
+        //問題文がある場合は次の問題へ遷移する
+        //StoryboardのIdentifierに設定した（question)を指定してViewControllerを生成する
+        if let nextQuestionViewController = storyboard?.instantiateViewController(withIdentifier: "question") as? QuestionViewController {
+            nextQuestionViewController.questionData = nextQuestion
+            present(nextQuestionViewController, animated: true, completion: nil)
+        }
+        
     }
         
     override func didReceiveMemoryWarning() {

@@ -10,10 +10,25 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    @IBOutlet weak var correctPercentLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //問題数を取得する
+        let questionCount = QuestionDataManager.sharedInstance.questionDataArray.count
+        
+        //正解数を取得する
+        var correctCount:Int = 0
+        
+        //正解数を計算する
+        for QuestionData in QuestionDataManager.sharedInstance.questionDataArray {
+            if QuestionData.isCorrect() {
+                correctCount += 1
+            }
+        }
+        //正解率を計算する
+        let correctPercent:Float = (Float(correctCount) / Float(questionCount)) * 100
+        correctPercentLabel.text = String(format:"%.lf", correctPercent) + "%"
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +36,4 @@ class ResultViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
