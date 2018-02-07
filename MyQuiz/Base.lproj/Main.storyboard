@@ -181,6 +181,9 @@
                                 <state key="normal" title="タイトルへ戻る">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="pDO-Jc-0Lr" kind="unwind" unwindAction="goToTitle:" id="AoA-Wd-yAM"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jeP-6a-bh1">
                                 <rect key="frame" x="107" y="154" width="161" height="204"/>
@@ -222,6 +225,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HDw-7C-tdv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="pDO-Jc-0Lr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1391.2" y="133.5832083958021"/>
         </scene>
